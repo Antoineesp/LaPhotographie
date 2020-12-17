@@ -1,0 +1,278 @@
+		/* construction du corps des pages, des entêtes 
+		et des pieds de pages*/
+
+body {
+	text-align:center;
+	Font-Weight:bold;
+	background: conic-gradient(at 0% 30%, #f9f7cf 10%, #D1E2F4 30%, #EEDDCD 50%);
+	font-family:CourierNew,TimesNewRoman;
+}
+
+header{
+	background-image:url(img/entête.png);
+	background-size: cover;
+	background-color:#D1E2F4;
+	border-radius:5px;
+	box-shadow: 2px 2px 2px black;
+}
+
+footer{
+	font-size:20px;
+	background-color:#EEDDCD;
+	background-image:url(img/EPSI.jpg);
+	background-repeat:no-repeat;
+	background-position: right 3em bottom 8px;
+}
+
+footer a{
+	text-decoration: none;
+	color:blue;
+}
+
+footer a:hover{
+	color: red;
+	text-decoration: none; 
+	border-radius:5px;
+	cursor:pointer;
+}
+
+footer a:hover:before { 
+	content:" 📷 ";
+	color:red;
+}
+
+footer a:hover:after{ 
+	content:" 📷 ";
+	color:red;
+}
+
+footer button{
+	width:10%;
+	background-color:#EEDDCD;
+	border:0px;
+}
+footer button img{
+	border-radius:50px;
+	padding:0px;
+}
+footer button :hover{
+	border-radius:20px;
+}
+
+		/* construction de la barre de navigation horizontal */
+
+ ul#menu_horizontal{
+	font-size: 20px;
+	margin: 0.5em 0 0 0;
+	border:0.5px solid black;
+	list-style-type:none;
+	display:inline;
+	background-color:#827A7A;
+	border-radius:20px;
+}
+
+ul#menu_horizontal li{
+	width:11%;
+	display: inline-block;
+	padding:1 3.5%;
+	/* border-right:1px solid black; */
+	/* border-left:1px solid black; */
+}
+
+ul#menu_horizontal a{
+	color: black;
+	text-decoration: none;
+	/* text-shadow: 8px 6px 8px black; */
+	font: 0.8em "trebuchet MS";
+}
+
+ul#menu_horizontal a:hover{
+	background-color:white;
+	text-decoration:none; 
+	border-radius:5px;
+	cursor:pointer;
+}
+
+ul#menu_horizontal a:hover:before { 
+	content:" 📷 ";
+	text-shadow: 0px 0px 0px black;
+}
+
+ul#menu_horizontal a:hover:after{ 
+	content:" 📷 ";
+	text-shadow: 0px 0px 0px black;
+}
+
+.navigation{
+	color:#D9D7D7;
+}
+
+		/* éléments contenus dans toutes les pages.
+		les div (tous le texte et les images)*/
+
+.text{
+	background-color:#cccccc;
+	padding: 10px;
+	text-align:left;
+	width:70%;
+	border-radius: 5px;
+	box-shadow: 2px 2px 2px black;
+}
+
+table{
+	margin-left:15%;
+	margin-top:3%;
+	width:80%;
+}
+
+img{
+	width:70%;
+	background-color:#424242;
+	padding: 4px;
+	margin:10px;
+}
+
+a{
+	color:#0052cc;
+}
+	
+		/* placement et définition de la taille/ style des div et autres éléments
+		page par page*/
+		
+		/* page 1 */
+#Bienvenue{
+	background-color:white;
+	width:60%;
+	margin-left:20%;
+	box-shadow: 2px 2pèx black, -2px -2px black;
+	font-size: 25px;
+	margin-top:2%;
+}
+
+#presentation{
+	position:absolute;
+	width:30%;
+	margin-left:10%;
+	margin-top:2%;
+}
+
+#sujet{
+	margin-left:12%;
+}
+
+#sommaire{
+	margin-left:45%;
+	margin-top:2%;
+	width:45%;
+}
+
+		/* page 2 */
+.appareil{
+	width:50%;
+	background-color:black;
+	color:white;
+	text-align:center;
+}
+
+		/* page 3 */
+#intro{
+	position:absolute;
+	width:25%;
+	margin-left:15%;
+	margin-top:2%;
+}
+
+#exemple{
+	margin-left:45%;
+	margin-top:2%;
+	width:40%;
+}
+
+#img1page3{
+	margin-top:3%;
+	z-index:1;
+}
+#img1page3 h3{
+	position:absolute;
+	margin-left:20%;
+	z-index:2;
+}
+
+#explications{
+	width:50%;
+	margin-left:25%;
+}
+
+#img2page3{
+	width:30%;
+	position:absolute;
+	margin-top:3%;
+	margin-left:20%;
+}
+
+#img3page3{
+	width:30%;
+	margin-top:3%;
+	margin-left:50%;
+}
+
+		/* page 4 */
+#pratiques{
+	width:50%;
+	margin-top:3%;
+	margin-left:25%;
+}
+
+#conclusion{
+	width:40%;
+	margin-top:3%;
+	margin-left:30%;
+}
+
+#tableaupage4 td{
+	border:1px dashed silver;
+	background-color:#cccccc;
+}
+
+	/* page 5 */
+#moi{
+	position:absolute;
+	width:20%;
+	margin-left:50%;
+	margin-top:2%;
+}
+
+.imgpage5{
+	width:20%;
+}
+
+.imgpage5: hover{
+	width:50%;
+}
+
+#creations{
+	margin-left:30%;
+	margin-top:2%;
+	width:40%;
+}
+
+#bilan{
+	margin-left:25%;
+	margin-bottom:2%;
+	width:50%;
+}
+
+/* formulaire en pied de page */
+#formulaire{
+	background-color:#cccccc;
+	border-radius:5px;
+	border:1px dashed silver;
+	width:20%;
+	margin-left:30%;
+}
+legend{
+	border-bottom:1px dashed silver;
+}
+input, textarea{
+	border-radius:10px;
+}
